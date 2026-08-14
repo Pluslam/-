@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鬼谷子完整實用教程｜融合全文 + 日常案例</title>
+  <meta name="description" content="完整融合《鬼谷子》維基文庫結構與原文精華，配合大量日常案例，令你真正學懂並應用捭闔、反應、飛箝、揣摩、本經陰符等術。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c9a227; }
+    body {
+      font-family: 'Noto Sans TC', system-ui, sans-serif;
+      background: linear-gradient(180deg, #0c0c0c 0%, #1a1510 100%);
+      color: #e8e0d5;
+      line-height: 1.85;
+    }
+    .serif { font-family: 'Noto Serif TC', serif; }
+    .chapter-card {
+      background: rgba(30, 25, 20, 0.88);
+      border: 1px solid rgba(201, 162, 39, 0.28);
+      backdrop-filter: blur(8px);
+    }
+    .classic-quote {
+      border-left: 4px solid var(--gold);
+      background: rgba(201, 162, 39, 0.09);
+    }
+    .step-number {
+      background: linear-gradient(135deg, #c9a227, #8b6914);
+      color: #1a1a1a;
+    }
+    details summary { cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary .arrow { transform: rotate(90deg); }
+    .arrow { transition: transform 0.2s; display: inline-block; }
+    .case-box {
+      background: rgba(20, 40, 30, 0.5);
+      border: 1px solid rgba(80, 160, 100, 0.35);
+    }
+    .danger-box {
+      background: rgba(60, 20, 20, 0.4);
+      border: 1px solid rgba(180, 60, 60, 0.35);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-amber-900/40 bg-black/85 backdrop-blur-md">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center serif text-xl font-bold text-black">鬼</div>
+        <div>
+          <h1 class="serif text-lg font-bold tracking-wide text-amber-100">鬼谷子完整實用教程</h1>
+          <p class="text-xs text-amber-200/60">融合維基文庫全文結構 · 大量日常案例</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-5 text-sm">
+        <a href="#structure" class="hover:text-amber-400 transition">全書結構</a>
+        <a href="#baihe" class="hover:text-amber-400 transition">捭闔</a>
+        <a href="#all-chapters" class="hover:text-amber-400 transition">各篇詳解</a>
+        <a href="#daily" class="hover:text-amber-400 transition">日常案例</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative py-14 md:py-20 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/25 via-transparent to-transparent"></div>
+    <div class="max-w-4xl mx-auto px-4 relative text-center">
+      <p class="text-amber-500/80 text-sm tracking-widest mb-3">根據 https://zh.wikisource.org/zh-hant/鬼谷子 完整結構改編</p>
+      <h2 class="serif text-3xl md:text-5xl font-bold text-amber-50 mb-5 leading-tight">
+        真正學懂《鬼谷子》<br>
+        <span class="text-amber-400">用日常案例講清楚</span>
+      </h2>
+      <p class="text-base md:text-lg text-stone-300 max-w-2xl mx-auto">
+        唔止講理論，每篇都配現代日常例子（傾生意、管人、家人溝通、談判、自己情緒管理），令你即刻明白「點用」。
+      </p>
+    </div>
+  </section>
+
+  <main class="max-w-4xl mx-auto px-4 pb-24 space-y-12">
+
+    <!-- 全書結構 -->
+    <section id="structure" class="chapter-card rounded-2xl p-6 md:p-9">
+      <div class="flex items-center gap-4 mb-5">
+        <span class="step-number w-9 h-9 rounded-full flex items-center justify-center font-bold">全</span>
+        <h2 class="serif text-2xl font-bold text-amber-100">《鬼谷子》完整結構（維基文庫）</h2>
+      </div>
+      <p class="text-stone-300 mb-5 text-sm">根據梁·陶弘景注本，全書分三卷。第十三、十四篇（轉丸、胠亂）已佚。</p>
+      
+      <div class="grid md:grid-cols-3 gap-4 text-sm">
+        <div class="p-4 rounded-xl bg-stone-900/60 border border-amber-900/30">
+          <h3 class="text-amber-300 font-medium mb-2">卷上（基礎）</h3>
+          <ul class="space-y-1 text-stone-300">
+            <li>捭闔第一</li>
+            <li>反應第二</li>
+            <li>內揵第三</li>
+            <li>抵巇第四</li>
+          </ul>
+        </div>
+        <div class="p-4 rounded-xl bg-stone-900/60 border border-amber-900/30">
+          <h3 class="text-amber-300 font-medium mb-2">卷中（應用）</h3>
+          <ul class="space-y-1 text-stone-300">
+            <li>飛箝第五</li>
+            <li>忤合第六</li>
+            <li>揣篇第七</li>
+            <li>摩篇第八</li>
+            <li>權篇第九</li>
+            <li>謀篇第十</li>
+            <li>決篇第十一</li>
+            <li>符言第十二</li>
+          </ul>
+        </div>
+        <div class="p-4 rounded-xl bg-stone-900/60 border border-amber-900/30">
+          <h3 class="text-amber-300 font-medium mb-2">卷下（內功）</h3>
+          <ul class="space-y-1 text-stone-300">
+            <li>本經陰符七術</li>
+            <li>持樞</li>
+            <li>中經</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-5 text-xs text-stone-500">原文來源：<a href="https://zh.wikisource.org/zh-hant/鬼谷子" target="_blank" class="text-amber-400 underline">維基文庫《鬼谷子》</a></p>
+    </section>
+
+    <!-- 核心：捭闔 -->
+    <section id="baihe" class="chapter-card rounded-2xl p-6 md:p-9">
+      <div class="flex items-center gap-4 mb-5">
+        <span class="step-number w-9 h-9 rounded-full flex items-center justify-center font-bold">1</span>
+        <h2 class="serif text-2xl font-bold text-amber-100">捭闔第一 · 開合之道（全書總綱）</h2>
+      </div>
+
+      <div class="classic-quote p-4 rounded-r-lg mb-5">
+        <p class="serif text-amber-100/95 text-sm md:text-base">
+          「捭之者，開也，言也，陽也。闔之者，閉也，默也，陰也。陰陽其和，終始其義。<br>
+          口者，心之門戶也；心者，神之主也。」
+        </p>
+      </div>
+
+      <div class="space-y-4 text-stone-200">
+        <p><strong class="text-amber-200">白話精義：</strong> 捭 = 開、講、主動、陽；闔 = 閉、唔講、被動、陰。口係心嘅門。你講嘢就係「開」，沉默就係「閉」。真正高手懂得幾時開、幾時合，而唔係成日講或者成日唔講。</p>
+        
+        <p>聖人觀察陰陽開合去命名事物，知道存亡嘅門戶，籌策萬物終始，明白人心道理，見到變化嘅跡象，然後守住呢個門戶。賢與不肖、智與愚、勇與怯都有差別，所以可以開、可以閉、可以進、可以退、可以賤、可以貴，用無為去牧養佢哋。</p>
+
+        <div class="case-box p-4 rounded-xl mt-5">
+          <h4 class="text-emerald-300 font-medium mb-2">日常案例 1：同客戶傾生意</h4>
+          <p class="text-sm">客戶一開始好防範（陰）。你如果一開始就猛力推銷（過度捭），對方會更加關。正確做法：先「闔」——多聽、少講、問問題，等對方自己打開。當對方開始講自己痛點（變陽），你先「捭」——針對痛點提出方案。呢就係「陰陽其和」。</p>
+        </div>
+
+        <div class="case-box p-4 rounded-xl">
+          <h4 class="text-emerald-300 font-medium mb-2">日常案例 2：管員工 / 合作夥伴</h4>
+          <p class="text-sm">員工做錯事。你如果即刻發脾氣大鬧（亂捭），對方會防守甚至反彈。正確：先「闔」——冷靜觀察、收集事實；再「微排其言而捭反之」——輕輕質疑佢講法，令佢自己講出真相；之後先決定開（教導）定閉（處罰）。</p>
+        </div>
+
+        <div class="danger-box p-4 rounded-xl">
+          <h4 class="text-red-300 font-medium mb-2">常見錯誤</h4>
+          <p class="text-sm">成日「開」＝話太多、暴露太多底牌、情緒外露 → 容易被利用。<br>成日「閉」＝唔溝通、冷處理 → 關係疏遠、機會流失。<br>關鍵係「周密」：想開就要周全，想閉就要嚴密。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 各篇詳解 -->
+    <section id="all-chapters" class="space-y-6">
+      <h2 class="serif text-2xl font-bold text-amber-100 px-1">各篇詳解 + 日常案例</h2>
+
+      <!-- 反應 -->
+      <details class="chapter-card rounded-2xl overflow-hidden" open>
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+            <span class="serif text-xl text-amber-100">反應第二 · 聽言探心</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <div class="classic-quote p-3 rounded-r-lg text-sm">
+            「人言者，動也；己默者，靜也。因其言，聽其辭，言有不合者，反而求之，其應必出。」
+          </div>
+          <p><strong class="text-amber-200">白話：</strong> 對方講嘢係「動」，你沉默係「靜」。因為佢講，你反而追問，佢一定會有回應，從而露出真實。想聽對方聲，你就反而默；想對方張開，你就反而收斂。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例</h4>
+            <p class="text-sm">朋友或同事話「我最近好忙，未必有時間幫你」。你唔好即刻接受或者生氣。反而問：「係邊方面忙？係時間問題定資源問題？」對方如果真係忙，會具體講；如果只係推托，會含糊其辭。呢就係「反而求之，其應必出」。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 內揵 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+            <span class="serif text-xl text-amber-100">內揵第三 · 建立牢固關係</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <div class="classic-quote p-3 rounded-r-lg text-sm">
+            「君臣上下之事，有遠而親，近而疏……事皆有內揵，素結本始。或結以道德，或結以黨友，或結以財貨，或結以采色。」
+          </div>
+          <p><strong class="text-amber-200">白話：</strong> 有人距離遠卻親，有人好近卻疏。關鍵係「內揵」——用共同道德、朋友關係、利益、或者情感將關係從內部結實。想親就親、想疏就疏，好似蛈母帶仔，出入無痕跡。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例</h4>
+            <p class="text-sm">你同某位客戶或合作夥伴表面好熟，但一有利益衝突就即刻疏遠。呢就係「近而疏」——只有表面，無「內揵」。正確做法：搵共同價值（例如都想幫學生、都想做好教育），或者建立真正利益共同體（利潤分享、長期合作），先至係牢固。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 抵巇 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">4</span>
+            <span class="serif text-xl text-amber-100">抵巇第四 · 利用裂縫</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <p><strong class="text-amber-200">白話：</strong> 巇係裂縫、縫隙。事物開始有細微裂縫時，可以堵塞、可以推卻、可以令佢平息、可以隱藏、甚至可以藉機得到。聖人知道危險，先保護自己，再因應變化去計謀。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例</h4>
+            <p class="text-sm">團隊入面兩個成員開始有小磨擦（細裂縫）。如果你唔理，可能變成大矛盾。用抵巇：可以「塞」（及時溝通調停）、可以「卻」（暫時分開佢哋工作）、可以「得」（借呢個機會重新調整分工，令團隊更高效）。關鍵係「見微知著」。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 飛箝 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">5</span>
+            <span class="serif text-xl text-amber-100">飛箝第五 · 拉攏與控制</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <div class="classic-quote p-3 rounded-r-lg text-sm">
+            「飛，謂作聲譽以飛揚之；箝，謂牽持緘束，令不得脫也。」
+          </div>
+          <p><strong class="text-amber-200">白話：</strong> 「飛」係抬高對方、畀聲譽、畀希望；「箝」係拉住、控制。先用飛令對方開心露情，再用箝拉住佢，令佢唔好輕易離開。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例</h4>
+            <p class="text-sm">想請一位有能力嘅人幫手或者合作。你先「飛」——公開稱讚佢過往成績、畀佢高期望同舞台；對方開心之後，再用具體條件「箝」住（合約、分潤、長期合作）。如果一開始就只講條件，對方未必有動力。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 忤合 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">6</span>
+            <span class="serif text-xl text-amber-100">忤合第六 · 進退離合</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <p><strong class="text-amber-200">白話：</strong> 世間萬事有「合」（趨合）同「忤」（背反）。合於彼就逆於此。要根據實際情況靈活運用，可以進可以退、可以縱可以橫。聖人因事物之會、觀天時之宜去決定。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例</h4>
+            <p class="text-sm">你想同A公司合作，但A同B公司有衝突。如果你堅持「合」A，就必然「忤」B。要衡量：合A嘅利益大，定合B大？或者有冇第三條路？唔好死撐一個立場。呢就係「因事為制」。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 揣 + 摩 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">7-8</span>
+            <span class="serif text-xl text-amber-100">揣篇 · 摩篇 · 量權揣情</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <p><strong class="text-amber-200">白話：</strong> 「量權」係客觀評估：大小、財貨、人民、地形、君臣親疏、天時吉凶等。「揣情」係推測對方真實情感同隱藏意圖。「摩」係更細緻地試探同引導對方意念。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例</h4>
+            <p class="text-sm">見一位潛在大客戶之前：先「量權」——公司規模、近期業績、決策人係邊個、有冇競爭對手；再「揣情」——呢位決策人真正在意嘅係價錢？面子？風險？長期關係？見面前可以先透過共同朋友「摩」一下對方近期關注點。準備越充分，成功率越高。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 權 · 謀 · 決 · 符言 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">9-12</span>
+            <span class="serif text-xl text-amber-100">權 · 謀 · 決 · 符言</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <p><strong class="text-amber-200">權篇：</strong> 權衡利弊，知道點樣用言語同策略去影響人。<br>
+          <strong class="text-amber-200">謀篇：</strong> 謀略要先知道對方，再定自己計劃；要隱密，先發制人。<br>
+          <strong class="text-amber-200">決篇：</strong> 可決則決。猶豫不決係大忌。聖人決事，必要有「符」（依據）。<br>
+          <strong class="text-amber-200">符言：</strong> 主位、主明、主德、主賞、主問、主因、主周、主恭、主名 —— 領導人嘅九個原則。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例（決篇）</h4>
+            <p class="text-sm">你猶豫緊要唔要開一個新項目 / 請一個人。用「決」：收集足夠資訊（量權揣情）之後，如果利大於弊，就決；如果資料仍然不足，就暫時不決，繼續觀察。最怕係「半決不決」——既無全力去做，又無完全放棄，耗費精神。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 本經陰符七術 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">內</span>
+            <span class="serif text-xl text-amber-100">本經陰符七術 · 內功修煉</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <p>呢部分係全書最重要嘅「根基」。術要用，但無內功，術就變成「鬼算」。</p>
+          <ul class="text-sm space-y-2">
+            <li><strong class="text-amber-300">盛神法五龍</strong>：養神，令精神旺盛如龍變化。</li>
+            <li><strong class="text-amber-300">養志法靈龜</strong>：養志，令意志堅定，唔被欲望分散。</li>
+            <li><strong class="text-amber-300">實意法螣蛇</strong>：令意念充實、專注。</li>
+            <li><strong class="text-amber-300">分威法伏熊</strong>：分散對方威勢，自己積蓄力量。</li>
+            <li><strong class="text-amber-300">散勢法鷙鳥</strong>：在適當時機爆發力量。</li>
+            <li><strong class="text-amber-300">轉圓法猛獸</strong>：計謀圓轉靈活，如猛獸轉動。</li>
+            <li><strong class="text-amber-300">損兌法靈蓍</strong>：懂得損益，知進退。</li>
+          </ul>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例（養志）</h4>
+            <p class="text-sm">你成日想做大事，但被短視頻、訊息、雜事分散注意力，結果志氣衰弱。養志方法：減少欲望干擾（少刷無意義內容）、固定時間做重要事、每日反思「今日有冇令自己志意更實」。蘇秦失敗後先「刺股」苦讀、重建精神，先有後來嘅成功。</p>
+          </div>
+        </div>
+      </details>
+
+      <!-- 持樞 · 中經 -->
+      <details class="chapter-card rounded-2xl overflow-hidden">
+        <summary class="flex items-center justify-between p-5 md:p-6 hover:bg-amber-950/20 transition">
+          <div class="flex items-center gap-3">
+            <span class="step-number w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">末</span>
+            <span class="serif text-xl text-amber-100">持樞 · 中經</span>
+          </div>
+          <span class="arrow text-amber-500">▶</span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 space-y-4 text-stone-200">
+          <p><strong class="text-amber-200">持樞：</strong> 持住事物嘅關鍵（如春生、夏長、秋收、冬藏）。做人處事要順應自然規律，唔好逆時而動。</p>
+          <p><strong class="text-amber-200">中經：</strong> 更深入講點樣用各種方法去影響、轉化人心（包括見形、聞聲、知音等）。</p>
+          
+          <div class="case-box p-4 rounded-xl">
+            <h4 class="text-emerald-300 font-medium mb-1">日常案例（持樞）</h4>
+            <p class="text-sm">做生意要順時：旺季全力衝、淡季養精蓄銳、學習、調整。硬喺淡季強推，往往事倍功半。呢就係「持樞」——抓住季節同節奏嘅關鍵。</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- 大量日常案例總結 -->
+    <section id="daily" class="chapter-card rounded-2xl p-6 md:p-9">
+      <div class="flex items-center gap-4 mb-6">
+        <span class="step-number w-9 h-9 rounded-full flex items-center justify-center font-bold">用</span>
+        <h2 class="serif text-2xl font-bold text-amber-100">日常情境速查表</h2>
+      </div>
+
+      <div class="space-y-4 text-sm">
+        <div class="p-4 rounded-xl bg-stone-900/50 border border-stone-700">
+          <h4 class="text-amber-300 mb-1">傾生意 / 談判</h4>
+          <p class="text-stone-300">先用<strong>反應</strong>多聽 → 用<strong>揣摩</strong>判斷對方真正在意咩 → 用<strong>捭闔</strong>決定幾時講價錢、幾時沉默 → 必要時用<strong>飛箝</strong>抬高對方 → 用<strong>決</strong>去收尾。</p>
+        </div>
+        <div class="p-4 rounded-xl bg-stone-900/50 border border-stone-700">
+          <h4 class="text-amber-300 mb-1">管人 / 帶團隊</h4>
+          <p class="text-stone-300">用<strong>內揵</strong>建立真正共同目標 → 發現小問題即時用<strong>抵巇</strong>處理 → 用<strong>飛箝</strong>表揚優秀者 → 自己先<strong>養志</strong>，情緒穩定先可以「牧人」。</p>
+        </div>
+        <div class="p-4 rounded-xl bg-stone-900/50 border border-stone-700">
+          <h4 class="text-amber-300 mb-1">家人 / 親密關係</h4>
+          <p class="text-stone-300">最易過度「捭」（成日講道理）或者過度「闔」（冷戰）。用<strong>反應</strong>：對方發脾氣時，你反而安靜聽，問「你真正在意嘅係咩？」。關係要有「內揵」——共同回憶、共同目標、真正關心，而唔係表面客套。</p>
+        </div>
+        <div class="p-4 rounded-xl bg-stone-900/50 border border-stone-700">
+          <h4 class="text-amber-300 mb-1">自己情緒低落 / 失敗</h4>
+          <p class="text-stone-300">即刻用<strong>本經陰符</strong>：養志（減少雜念）、盛神（休息、運動、清心）。蘇秦失敗後先練內功，先有後來掛六國相印。術係外用，內功先係根本。</p>
+        </div>
+        <div class="p-4 rounded-xl bg-stone-900/50 border border-stone-700">
+          <h4 class="text-amber-300 mb-1">面對強勢對手</h4>
+          <p class="text-stone-300">唔好硬碰（過度捭）。用<strong>分威</strong>（分散對方注意力或力量）、<strong>散勢</strong>（等時機爆發）、<strong>忤合</strong>（可以暫時退讓，再尋找有利位置）。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 總結 -->
+    <section class="chapter-card rounded-2xl p-6 md:p-9">
+      <h2 class="serif text-xl font-bold text-amber-100 mb-4">學《鬼谷子》最重要嘅一句</h2>
+      <div class="classic-quote p-5 rounded-r-lg">
+        <p class="serif text-lg text-amber-100">「己審先定以牧人，策而無形容，莫見其門，是謂天神。」</p>
+        <p class="text-sm text-stone-400 mt-2">自己先搞清楚、先穩定，先去引導人。計策無痕跡，對方睇唔到你嘅門路，呢就係最高境界。</p>
+      </div>
+      <p class="mt-5 text-stone-300 text-sm">
+        記住：<strong class="text-amber-200">先定己，後牧人</strong>。如果自己內心混亂、欲望太多、情緒不穩，再高明嘅術都會反噬。術極為道——用到最後，回歸自然同真誠。
+      </p>
+    </section>
+
+    <!-- 來源 -->
+    <section class="chapter-card rounded-2xl p-6 md:p-8">
+      <h2 class="serif text-lg font-bold text-amber-100 mb-3">內容來源</h2>
+      <ul class="text-sm text-stone-400 space-y-1">
+        <li>• 《鬼谷子》全文結構與原文精華：<a href="https://zh.wikisource.org/zh-hant/鬼谷子" target="_blank" class="text-amber-400 underline">維基文庫</a>（梁·陶弘景注本）</li>
+        <li>• 粵語講解參考：陳老C全書、古墨今說50分鐘精華、Alina粵讀社《捭闔》拆解</li>
+        <li>• 日常案例：針對現代商業、人際、自我管理重新詮釋</li>
+      </ul>
+      <p class="mt-4 text-xs text-stone-500">本網站僅供文化學習與個人修養參考。用術之前，請先問心：自己有冇「先定己」？</p>
+    </section>
+  </main>
+
+  <footer class="border-t border-amber-900/30 py-8 text-center text-sm text-stone-500">
+    <p>鬼谷子完整實用教程 · 融合全文 · 日常案例</p>
+    <p class="mt-1">「術極為道」</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
